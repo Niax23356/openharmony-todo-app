@@ -1,0 +1,49 @@
+{
+  "app": {
+    "signingConfigs": [
+      {
+        "name": "default",
+        "material": {
+          "certpath": "C:/Users/53561/.ohos/config/openharmony/default_harmony_p-RyD1AmzdEzVPw6xaDk9YIpPzsQgVJY3r6ekzF9_aE=.cer",
+          "storePassword": "0000001A027E182FD5A5473055F02AB0E22CAB85F62B0E6A668EC9EA3C1A751C65E58A286DC37F563331",
+          "keyAlias": "debugKey",
+          "keyPassword": "0000001AA4777343A1B8BA20889D873BDF91C38C5163BA272F04AEF759E0736E0E10DECEEABEBDE1B10C",
+          "profile": "C:/Users/53561/.ohos/config/openharmony/default_harmony_p-RyD1AmzdEzVPw6xaDk9YIpPzsQgVJY3r6ekzF9_aE=.p7b",
+          "signAlg": "SHA256withECDSA",
+          "storeFile": "C:/Users/53561/.ohos/config/openharmony/default_harmony_p-RyD1AmzdEzVPw6xaDk9YIpPzsQgVJY3r6ekzF9_aE=.p12"
+        }
+      }
+    ],
+    "products": [
+      {
+        "name": "default",
+        "signingConfig": "default",
+        "compileSdkVersion": 12,
+        "compatibleSdkVersion": 12,
+        "runtimeOS": "OpenHarmony"
+      }
+    ],
+    "buildModeSet": [
+      {
+        "name": "debug",
+      },
+      {
+        "name": "release"
+      }
+    ]
+  },
+  "modules": [
+    {
+      "name": "entry",
+      "srcPath": "./entry",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
+    }
+  ]
+}
